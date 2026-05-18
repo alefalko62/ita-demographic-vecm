@@ -1,0 +1,45 @@
+README: ANALISI DEL COLLASSO SISTEMICO E DEMOGRAFICO (1977-2025)
+Guida all'esecuzione progressiva del modello econometrico
+Questo archivio contiene l'intera sequenza di script Python necessaria per riprodurre e validare la scoperta della rottura strutturale tra Capitale, Lavoro, Ambiente e Dinamica Demografica in Italia.
+
+L'ordine di esecuzione 0_ - 01_ -02_ . . . .vi guiderà dalla scoperta dell'anomalia statistica di base, passando per la dimostrazione del nesso di causalità macroeconomica, fino alla certificazione termodinamica del collasso di sistema.
+
+FASE 1: La ricerca della frattura e la memoria dei dati
+Prima di ipotizzare correlazioni, è necessario individuare dove il sistema storico si è "spezzato" e verificare la natura intrinseca delle serie storiche.
+
+Chow_anno_breakpoint.py & Chow_anno2_breakpoint.py
+Eseguono il Test di Chow per individuare le rotture strutturali nelle serie storiche. Dimostrano matematicamente che l'ecosistema macroeconomico pre-2018 e post-2018 non obbedisce più alle stesse leggi (mutazione di fase).
+
+ADF su N 77-18.py
+Applica il test Augmented Dickey-Fuller (ADF) per la stazionarietà. Dimostra che le serie storiche utilizzate hanno "memoria" (sono integrate di ordine 1). Questo passaggio è vitale per garantire che le regressioni successive non siano correlazioni spurie.
+
+FASE 2: La forza di gravità del Lungo Periodo
+Questi script verificano se le variabili divergono casualmente o se sono ancorate l'una all'altra da una forza strutturale a lungo termine.
+
+COINTEGRAZIONE.py
+Esegue il primo test bivariato tra Estrazione Economica (Capitale/Lavoro) e Nascite. Dimostra che le due variabili sono cointegrate: possiedono un legame strutturale di lungo periodo che impedisce loro di muoversi in modo totalmente indipendente.
+
+JOHANSEN.py
+Inserisce la Terza Variabile: la Pressione Ambientale. Il Test di Johansen certifica che l'intero sistema a tre variabili (Economia, Demografia, Ambiente) è cointegrato, intrappolato in un'unica e inflessibile equazione di stato.
+
+FASE 3: Dinamica e Causalità di Lungo Periodo (VECM)
+Il Teorema di Rappresentazione di Engle-Granger stabilisce che, se due o più variabili sono cointegrate, deve esistere una causalità direzionale. Avendo dimostrato la cointegrazione nella Fase 2, questa fase modella l'esatta dinamica di causa ed effetto strutturale, ignorando il "rumore" delle fluttuazioni annuali.
+
+ANALISI MULTIVARIATA.py
+Esplora le influenze incrociate e i pesi relativi di tutte le forze in campo, depurando l'impatto economico dall'effetto delle altre variabili di controllo.
+
+VECM - Stato dell'Arte.py
+Costruisce il Modello a Correzione d'Errore (VECM). Rappresenta il vero "motore" causale del sistema: modella la velocità e la direzione con cui le variabili tentano disperatamente di ritornare all'equilibrio dopo aver subito uno shock estrattivo prolungato. È la prova matematica definitiva dell'inerzia termodinamica e del nesso di causalità di lungo periodo tra l'estrazione del Capitale e il collasso della forza lavoro.
+
+FASE 4: La Diagnosi Terminale
+Gli script che quantificano il momento in cui la capacità del sistema di auto-ripararsi viene distrutta.
+
+Rilevatore di Tipping Point - EWS_IT_S3.py
+Calcola gli Early Warning Signals (Segnali di Allarme Precoce). Individua il punto critico esatto di non ritorno (Tipping Point), in cui la varianza esplode e l'elastico del sistema si spezza definitivamente, portando al collasso irreversibile delle nascite.
+
+strutturale77_25.py
+Il modello macro-storico completo. Sintetizza l'intero arco temporale dal 1977 al 2025 in un'unica visione d'insieme, fornendo l'immagine chiara e quantificata della traiettoria di decadimento.
+
+FASE 5: La Certificazione Inattaccabile
+VALIDAZIONI.py
+Il test definitivo sui residui del modello. Analizza normalità, eteroschedasticità e assenza di autocorrelazione seriale. Certifica che i risultati ottenuti nei passaggi precedenti sono statisticamente puri, inattaccabili e privi di distorsioni matematiche.
