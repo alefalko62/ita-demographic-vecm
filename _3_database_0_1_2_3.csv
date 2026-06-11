@@ -1,3 +1,48 @@
+le righe dei dati vanno dalle serie "semplici" (riga 2) a quelle originarie del PRIMO codice  che ti ho passato (riga 4)
+ 
+-------------------------------------------------------TUTTE DIRETTE
+# Generazione metriche  della PRIMA riga 
+
+df['S1A'] = df['CL'] = C/L # S1A è ANCORA "centrata" sul Capitale
+
+df['S1B'] = df['LC'] = L/C # S1B è ANCORA "centrata" sul Lavoro
+
+df['S2'] =  df['N'] / 2.1 # qui il rapporto è INVERTITO rispetto al PRIMO codice 
+-----------------------------------------------------------------------
+
+------------------------------------------------- DEMOGRAFICA DIRETTA
+# Generazione metriche della SECONDA riga
+
+df['S1A'] = (M - df['LC']) / (M +1) # come nel PRIMO codice
+
+df['S1B'] = (df['CL'] - m_param) /(1 + m_param) # come nel PRIMO codice
+
+df['S2'] =  df['N'] / 2.1 # # qui il rapporto è INVERTITO rispetto al PRIMO codice 
+---------------------------------------------------------------------------------
+
+-------------------------------------------ECONOMICHE DIRETTE
+# Generazione metriche della TERZA riga
+
+df['S1A'] = df['CL'] = C/L # S1A è ANCORA "centrata" sul Capitale
+
+df['S1B'] = df['LC'] = L/C # S1B è ANCORA "centrata" sul Lavoro
+
+df['S2'] = (2.1 / df['N']) - 1 # solo S2 è quella del PRIMO codice !
+---------------------------------------
+
+---------------------------------------------ORIGINARIE
+# Generazione metriche della QUARTA riga
+
+TUTTE le serie nelle formule del PRIMO codice !
+
+df['S1A'] = (M - df['LC']) / (M +1) 
+
+df['S1B'] = (df['CL'] - m_param) /(1 + m_param) 
+
+df['S2'] = (2.1 / df['N']) - 1
+
+-----------------------------------------
+
 Nazione;Alt_Media_LC;Epoca_Inizio;Epoca_Fine;Var_Guida;Tipo_Cointegrazione;k1_L1;k2_OLS;R2_OLS;IoU_Geom;Max_CUSUM;Picco_IRF;Half_Life;EWS_AR1;CL_Max;CL_Max_Anno;CL_Min;CL_Min_Anno;CL_Media;CL_Mediana;LC_Max;LC_Max_Anno;LC_Min;LC_Min_Anno;LC_Media;LC_Mediana;S1A_Max;S1A_Max_Anno;S1A_Min;S1A_Min_Anno;S1A_Media;S1A_Mediana;S1B_Max;S1B_Max_Anno;S1B_Min;S1B_Min_Anno;S1B_Media;S1B_Mediana;N_Max;N_Max_Anno;N_Min;N_Min_Anno;N_Media;N_Mediana;S2_Max;S2_Max_Anno;S2_Min;S2_Min_Anno;S2_Media;S2_Mediana
 0TD;0,831342768;1977;2017;S1B;Bivariata;0,816894531;0,819158636;0,996215985;0,957469575;9,652057477;1,478420557;10;0,911483254;1,422895926;1960;0,990316074;1975;1,212372493;1,216887717;1,009778621;1975;0,702792089;1960;0,831342768;0,821771425;1,422895926;1960;0,990316074;1975;1,212372493;1,216887717;1,009778621;1975;0,702792089;1960;0,831342768;0,821771425;2,7;1964;1,14;2025;1,648333333;1,385;1,285714286;1964;0,542857143;2025;0,784920635;0,65952381
 1DD;0,8313427684201279;1977;2017;S1A;Bivariata;6,285742187500011;6,006959976012239;0,8219311525362052;0,7251265453874359;17,52374365993589;2,9712980292664124;10;0,9114832535885213;1,4228959263765233;1960;0,990316074158442;1975;1,2123724926771644;1,2168877167058771;1,0097786212849138;1975;0,7027920886291036;1960;0,8313427684201279;0,8217714248261989;0,15274644152575578;1960;0,0;1975;0,0887838346845914;0,09354622169207676;0,21734228941550773;1960;0,0;1975;0,11156841940927072;0,11383701588363826;2,7;1964;1,14;2025;1,6483333333333334;1,3849999999999998;1,2857142857142858;1964;0,5428571428571428;2025;0,7849206349206349;0,6595238095238094
