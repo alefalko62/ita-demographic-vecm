@@ -69,8 +69,8 @@ df['Anno'] = df['Anno'].astype(int)
 df.set_index('Anno', inplace=True)
 
 # 4 & 5. Calcolo variabili derivate 
-df['LC'] = df['L'] / df['C']
-df['CL'] = df['C'] / df['L']
+df['LC'] = df['L'] / df['C'] # 1.0104543 Fattore moltiplicativo per attribuire la spesa assistenziale
+df['CL'] = df['C'] / df['L'] # 0.9896538 Fattore moltiplicativo per detrarre la spesa assistenziale
 
 # Estrazione limiti strutturali assoluti (Fase Zero Matematizzata)
 M = df['LC'].max()
