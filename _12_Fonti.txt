@@ -1,0 +1,8 @@
+
+TFR in https://api.worldbank.org/v2/en/indicator/SP.DYN.TFRT.IN?downloadformat=csv
+TFT Italia in https://demo.istat.it/app/?i=FE1&l=it , poi cliccando su "Cerca" in basso a sinistra
+POPOLAZIONE ITA https://seriestoriche.istat.it/fileadmin/documenti/Tavola_2.3.xls (fino al 2011); poi bisogna cercare altrove e non è semplice. Comunque:
+
+https://db.nomics.world/AMECO/UOGD?dimensions=%7B%22geo%22%3A%5B%22kor%22%2C%22jpn%22%2C%22usa%22%2C%22gbr%22%2C%22fra%22%2C%22ita%22%2C%22esp%22%2C%22deu%22%5D%7D&tab=table 
+
+https://db.nomics.world/AMECO/UWCD?dimensions=%7B%22geo%22%3A%5B%22kor%22%2C%22jpn%22%2C%22usa%22%2C%22gbr%22%2C%22fra%22%2C%22ita%22%2C%22esp%22%2C%22deu%22%5D%7D&page=2&tab=table
